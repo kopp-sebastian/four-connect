@@ -1,0 +1,16 @@
+@startuml
+
+title Check if one player has won
+
+
+start
+
+if (has a player four in line?) then (yes)
+  :Finish game;
+else (no)
+  :Select next player;
+endif
+
+stop
+
+@enduml
