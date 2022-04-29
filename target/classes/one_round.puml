@@ -1,0 +1,26 @@
+@startuml
+title One Lap
+
+(*) --> show empty board
+
+  partition "App" {
+    -down-> showResultAndCheckStatus()
+  }
+
+  partition "Player 1" {
+   -left-> Player1.dropCoinOrResign()
+  }
+
+  -right-> showResultAndCheckStatus()
+
+  partition "Player 2" {
+    -right-> Player2.dropCoinOrResign()
+  }
+
+  -left-> showResultAndCheckStatus()
+
+  -down-> showResult()
+
+--> (*)
+
+@enduml

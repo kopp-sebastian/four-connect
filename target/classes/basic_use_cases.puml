@@ -1,0 +1,26 @@
+@startuml
+
+title Four Connect
+
+actor Player1
+actor Player2
+
+rectangle 4C {
+  (Play game) as play
+  (Resign)
+  (checkWin)
+}
+
+' layout
+play .down.> checkWin : <<includes>>
+play -[hidden]up- Resign
+
+Player1 - play
+Player2 - play
+
+Player1 - Resign
+Player2 - Resign
+
+
+
+@enduml
