@@ -51,8 +51,15 @@ public class FourConnectAppTest
         fourConnectModel.resetModel();
         //**When** player1 drops disks always in col 0
         //**And** player2 drops his disks always in col 1
+        for(int counter = 0; counter < 3; counter++) {
+            fourConnectModel.playersTurn(0);
+            fourConnectModel.incrementCount();
+            fourConnectModel.playersTurn(1);
+            fourConnectModel.incrementCount();
+        }
+        fourConnectModel.playersTurn(convertColumnToModel(0));
         //**Then** after 4 rounds player1 has won the game
-        Assert.assertTrue(false);
+        Assert.assertEquals("R", fourConnectPresenter.checkWinner());
     }
 
     @Test
