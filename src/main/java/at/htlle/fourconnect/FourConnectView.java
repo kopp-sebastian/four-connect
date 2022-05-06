@@ -1,5 +1,7 @@
 package at.htlle.fourconnect;
 
+import java.util.Scanner;
+
 public class FourConnectView {
     public void printView(String text){
         System.out.println(text);
@@ -23,4 +25,21 @@ public class FourConnectView {
         }
     }
 
+    public static int dropDisk() {
+        //We need to have the user tell us what column he wants
+        //to drop a red into
+        //Note: the user isn't supposed to know that we have 15 columns
+        //starting at index 0 till 14 but just 6 nice ones
+        System.out.println("Drop a red disk at column (0–6): ");
+        Scanner scan = new Scanner (System.in);
+
+        //Thankfully, there's a simple formula for converting a 1-2-3-4-5-6
+        //user column number into a 1-3-5-7-9-11-13
+        int c = 2*scan.nextInt()+1;
+        return c;
+    }
+
+    public int requestColumn(String disk) {
+        return 0;
+    }
 }
