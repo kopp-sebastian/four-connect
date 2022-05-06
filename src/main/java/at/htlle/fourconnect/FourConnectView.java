@@ -1,6 +1,6 @@
 package at.htlle.fourconnect;
 
-public class View {
+public class FourConnectView {
     public void printView(String text){
         System.out.println(text);
     }
