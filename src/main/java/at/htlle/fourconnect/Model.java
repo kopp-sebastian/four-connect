@@ -1,4 +1,4 @@
 package at.htlle.fourconnect;
 
-public class Module {
+public class Model {
 }
