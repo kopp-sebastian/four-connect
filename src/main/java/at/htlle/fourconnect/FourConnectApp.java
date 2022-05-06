@@ -2,7 +2,7 @@ package at.htlle.fourconnect;
 
 import java.util.Scanner;
 
-import static at.htlle.fourconnect.View.printPattern;
+import static at.htlle.fourconnect.FourConnectView.printPattern;
 
 public class FourConnectApp {
     //We need to first create the basic visual pattern
