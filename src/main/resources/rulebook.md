@@ -2,7 +2,7 @@
 Rule: Game is won when 4 disks of one player are in a line<br/>
 Rule: Only one piece is played at a time. <br />
 Rule: The game ends when there is a 4-in-a-row or a stalemate.<br/>
-Rule: Min # of player 2. Max # of player 5.<br/>
+Rule: Max # of player 2<br/>
 Rule: Adjust number size of board<br/>
 
 
