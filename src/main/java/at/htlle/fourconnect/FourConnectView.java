@@ -25,7 +25,7 @@ public class FourConnectView {
         }
     }
 
-    public static int dropDisk() {
+    public static int requestColumn() {
         //We need to have the user tell us what column he wants
         //to drop a red into
         //Note: the user isn't supposed to know that we have 15 columns
