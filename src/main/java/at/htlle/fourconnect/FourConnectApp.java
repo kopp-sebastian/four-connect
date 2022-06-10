@@ -5,6 +5,7 @@ import java.util.Scanner;
 import static at.htlle.fourconnect.FourConnectModel.createPattern;
 import static at.htlle.fourconnect.FourConnectView.printPattern;
 
+// ©: Gschaider, Kopp, Ursulescu, Veit
 public class FourConnectApp {
     //We need to first create the basic visual pattern
 
@@ -12,8 +13,7 @@ public class FourConnectApp {
 
     //Here's are basic move, making the lowest empty row
     //of a specific column have a Red
-    public static void dropRedPattern(String[][] f)
-    {
+    public static void dropRedPattern(String[][] f) {
         int c = dropRedDisk();
 
         //Now that we know our column, we have to loop
